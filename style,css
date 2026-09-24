@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #040108;
+    background-image: 
+        radial-gradient(rgba(255, 0, 127, 0.06) 1px, transparent 1px),
+        linear-gradient(rgba(0, 255, 170, 0.02) 1px, transparent 1px);
+    background-size: 20px 20px, 100% 4px;
+    color: #00ffaa;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.dream-container {
+    text-align: center;
+    max-width: 650px;
+    width: 100%;
+}
+
+.cyber-eye {
+    font-size: 3rem;
+    animation: flutuar 4s infinite ease-in-out;
+    filter: drop-shadow(0 0 10px #ff007f);
+    margin-bottom: 10px;
+}
+
+.glitch-text {
+    font-size: 2.2rem;
+    color: #ff007f;
+    text-shadow: 2px 2px #00ffff;
+    letter-spacing: 4px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #555;
+    font-style: italic;
+    font-size: 0.85rem;
+    margin-bottom: 30px;
+}
+
+.quiz-box {
+    background: rgba(15, 5, 25, 0.95);
+    border: 2px dashed #00ffaa;
+    box-shadow: 0px 0px 25px rgba(0, 255, 170, 0.15);
+    padding: 30px;
+    text-align: left;
+}
+
+.texto-pergunta {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff;
+    margin-bottom: 25px;
+    border-left: 3px solid #ff007f;
+    padding-left: 12px;
+    white-space: pre-line; /* Mantém a quebra de linha dos finais */
+}
+
+.btn-resposta {
+    display: block;
+    width: 100%;
+    background: rgba(0, 255, 170, 0.02);
+    border: 1px solid #ff007f;
+    color: #00ffaa;
+    padding: 14px;
+    margin: 12px 0;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    text-align: left;
+    cursor: pointer;
+}
+
+.btn-resposta:hover {
+    background: #ff007f;
+    color: #040108;
+    box-shadow: 0px 0px 12px #ff007f;
+    font-weight: bold;
+    transform: translateX(4px);
+}
+
+@keyframes flutuar {
+    0%, 100% { transform: translateY(0px); opacity: 0.7; }
+    50% { transform: translateY(-8px); opacity: 1; }
+}
